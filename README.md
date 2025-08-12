@@ -1,32 +1,25 @@
-# multi-tenant-backend Monorepo
+# Multi-Tenant Backend Monorepo Starter
 
-This is a monorepo managed with **Yarn Workspaces**.
+This monorepo contains the core backend libraries and services for a multi-tenant system, including CRUD apps, shared libraries, and utilities.
 
 ## Structure
 
-- `/packages` – All your packages (apps, libs, services) go here.
+- `user-library/` — User authentication and management library.
+- `file-upload-library/` — File upload and storage handling.
+- `tenants/` — Multi-tenancy core services.
+- `shared-utils/` — Shared utility classes.
+- `students-crud-app/` — Students CRUD microservice.
+- `employees-crud-app/` — Employees CRUD microservice.
+- `.github/` — Workflows, issue templates
+- `diagrams/` — Architecture and process diagrams.
+- `docs/` — Documentation.
 
 ## Getting Started
 
-1. **Install dependencies**
+1. Clone the repository.
+2. Run `mvn clean install` at the root.
+3. See individual module README files for details.
 
-   ```bash
-   yarn install
-   ```
+## Contributing
 
-2. **Add a new package**
-
-   ```bash
-   mkdir -p packages/my-new-package
-   cd packages/my-new-package
-   yarn init -y
-   ```
-
-3. **Develop locally**
-
-   - Each package manages its own code and dependencies.
-   - Use `yarn workspaces` commands to manage all packages together.
-
-## Resources
-
-- [Yarn Workspaces Documentation](https://classic.yarnpkg.com/en/docs/workspaces/)
+Please submit issues or feature requests via GitHub Issues.
