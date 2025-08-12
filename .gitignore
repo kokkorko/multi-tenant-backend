@@ -1,0 +1,16 @@
+# Java/Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+*.log
+*.class
+*.jar
+*.war
+*.iml
+.idea/
+.DS_Store
+
+# Node (if needed in the future)
+node_modules/
+
+# OS files
+Thumbs.db
